@@ -36,36 +36,6 @@ void init_LCD()
 	write_com(0x01);	// 显示清0，数据指针清0
 }
 
-// 在液晶上显示数字
-void LCD_ShowInt(uint num)
-{
-    int n=num, length=0;
-    if (num == 0)
-    {
-        write_date('0');
-        return;
-    }
-    
-    while(n)// 当n不等于0时执行循环
-    {
-        n=n/10;     // n的长度减去1
-        length++;   // length+1
-    }
-    switch(length)
-    {
-        case 5:
-            write_date(num/10000+'0');
-        case 4:
-            write_date(num%10000/1000+'0');
-        case 3:
-            write_date(num%1000/100+'0');
-        case 2:
-            write_date(num%100/10+'0');
-        case 1:
-            write_date(num%10+'0');
-    }
-}
-
 // 在液晶上显示字符串
 void LCD_ShowStr(char * str)
 {

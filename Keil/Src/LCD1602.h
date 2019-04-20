@@ -15,9 +15,6 @@ void write_date(uchar date);
 // LCD初始化
 void init_LCD();
 
-// 在液晶上显示数字
-void LCD_ShowInt(uint num);
-
 // 在液晶上显示字符串
 void LCD_ShowStr(char * str);
 

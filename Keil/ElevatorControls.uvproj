@@ -403,6 +403,36 @@
             </File>
           </Files>
         </Group>
+        <Group>
+          <GroupName>Key</GroupName>
+          <Files>
+            <File>
+              <FileName>Key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Src\Key.c</FilePath>
+            </File>
+            <File>
+              <FileName>Key.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Src\Key.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>L298N</GroupName>
+          <Files>
+            <File>
+              <FileName>L298N.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Src\L298N.c</FilePath>
+            </File>
+            <File>
+              <FileName>L298N.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Src\L298N.h</FilePath>
+            </File>
+          </Files>
+        </Group>
       </Groups>
     </Target>
   </Targets>
